@@ -1,5 +1,5 @@
 Summary:	FreeBoB - free driver implementation for the BeBoB platform
-Summary(pl.UTF-8):   FreeBoB - wolnodostępna implementacja sterowników dla platformy BeBoB
+Summary(pl.UTF-8):	FreeBoB - wolnodostępna implementacja sterowników dla platformy BeBoB
 Name:		libfreebob
 Version:	1.0.0
 Release:	1
@@ -28,7 +28,7 @@ sterowników dla platformy BeBoB. BeBoB jest używana w wielu dostępnych
 
 %package devel
 Summary:	Header files for FreeBoB library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki FreeBoB
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki FreeBoB
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libavc1394-devel >= 0.5.3
@@ -45,7 +45,7 @@ Pliki nagłówkowe biblioteki FreeBoB.
 
 %package static
 Summary:	Static FreeBoB library
-Summary(pl.UTF-8):   Statyczna biblioteka FreeBoB
+Summary(pl.UTF-8):	Statyczna biblioteka FreeBoB
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
