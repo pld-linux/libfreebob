@@ -1,5 +1,5 @@
 Summary:	FreeBoB - free driver implementation for the BeBoB platform
-Summary(pl):	FreeBoB - wolnodost阷na implementacja sterownik體 dla platformy BeBoB
+Summary(pl.UTF-8):   FreeBoB - wolnodost臋pna implementacja sterownik贸w dla platformy BeBoB
 Name:		libfreebob
 Version:	1.0.0
 Release:	1
@@ -21,14 +21,14 @@ This project aims to provide a free driver implemenation for the BeBoB
 platform. The BeBoB is used in many available IEEE 1394 based
 break-out boxes.
 
-%description -l pl
-Celem tego projektu jest zapewnienie wolnodost阷nej implementacji
-sterownik體 dla platformy BeBoB. BeBoB jest u縴wana w wielu dost阷nych
+%description -l pl.UTF-8
+Celem tego projektu jest zapewnienie wolnodost臋pnej implementacji
+sterownik贸w dla platformy BeBoB. BeBoB jest u偶ywana w wielu dost臋pnych
 "break-out boksach" opartych na IEEE 1394.
 
 %package devel
 Summary:	Header files for FreeBoB library
-Summary(pl):	Pliki nag丑wkowe biblioteki FreeBoB
+Summary(pl.UTF-8):   Pliki nag艂贸wkowe biblioteki FreeBoB
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libavc1394-devel >= 0.5.3
@@ -40,19 +40,19 @@ Requires:	libxml2-devel >= 2.6.0
 %description devel
 Header files for FreeBoB library.
 
-%description devel -l pl
-Pliki nag丑wkowe biblioteki FreeBoB.
+%description devel -l pl.UTF-8
+Pliki nag艂贸wkowe biblioteki FreeBoB.
 
 %package static
 Summary:	Static FreeBoB library
-Summary(pl):	Statyczna biblioteka FreeBoB
+Summary(pl.UTF-8):   Statyczna biblioteka FreeBoB
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static FreeBoB library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka FreeBoB.
 
 %prep
