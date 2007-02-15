@@ -6,7 +6,7 @@ Release:	1
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/freebob/%{name}-%{version}.tar.bz2
-# Source0-md5:	c5ccd2f4353454acba50e53734742551
+# Source0-md5:	aa550528324a4dfb3cf7c9a90d83c694
 URL:		http://freebob.sourceforge.net/
 BuildRequires:	alsa-lib-devel >= 1.0.0
 BuildRequires:	libavc1394-devel >= 0.5.3
