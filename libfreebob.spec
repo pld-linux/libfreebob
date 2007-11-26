@@ -1,12 +1,12 @@
 Summary:	FreeBoB - free driver implementation for the BeBoB platform
 Summary(pl.UTF-8):	FreeBoB - wolnodostępna implementacja sterowników dla platformy BeBoB
 Name:		libfreebob
-Version:	1.0.0
+Version:	1.0.3
 Release:	1
 License:	GPL v2+
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/freebob/%{name}-%{version}.tar.bz2
-# Source0-md5:	aa550528324a4dfb3cf7c9a90d83c694
+Source0:	http://dl.sourceforge.net/freebob/%{name}-%{version}.tar.gz
+# Source0-md5:	5f1c398b59ece5d1399de07b7caf4b4f
 URL:		http://freebob.sourceforge.net/
 BuildRequires:	alsa-lib-devel >= 1.0.0
 BuildRequires:	libavc1394-devel >= 0.5.3
