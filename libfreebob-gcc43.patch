@@ -43,3 +43,80 @@ diff -urN libfreebob-1.0.11/tests/test-volume.cpp libfreebob-1.0.11.new/tests/te
  const bool bVerbose = false;
  
  short int
+diff -Nur libfreebob-1.0.11-orig/src/debugmodule/debugmodule.cpp libfreebob-1.0.11/src/debugmodule/debugmodule.cpp
+--- libfreebob-1.0.11-orig/src/debugmodule/debugmodule.cpp	2007-10-15 20:15:09.000000000 +0200
++++ libfreebob-1.0.11/src/debugmodule/debugmodule.cpp	2009-08-10 21:49:07.000000000 +0200
+@@ -23,6 +23,7 @@
+ #include <stdarg.h>
+ #include <netinet/in.h>
+ 
++#include <cstdio>
+ #include <iostream>
+ 
+ using namespace std;
+diff -Nur libfreebob-1.0.11-orig/src/libfreebobavc/avc_extended_plug_info.cpp libfreebob-1.0.11/src/libfreebobavc/avc_extended_plug_info.cpp
+--- libfreebob-1.0.11-orig/src/libfreebobavc/avc_extended_plug_info.cpp	2009-08-10 20:31:14.000000000 +0200
++++ libfreebob-1.0.11/src/libfreebobavc/avc_extended_plug_info.cpp	2009-08-10 21:49:07.000000000 +0200
+@@ -22,6 +22,7 @@
+ #include "serialize.h"
+ #include "ieee1394service.h"
+ 
++#include <cstdio>
+ #include <cstdlib>
+ #include <cstring>
+ #include <netinet/in.h>
+diff -Nur libfreebob-1.0.11-orig/src/libfreebobavc/avc_extended_stream_format.cpp libfreebob-1.0.11/src/libfreebobavc/avc_extended_stream_format.cpp
+--- libfreebob-1.0.11-orig/src/libfreebobavc/avc_extended_stream_format.cpp	2007-10-15 20:15:08.000000000 +0200
++++ libfreebob-1.0.11/src/libfreebobavc/avc_extended_stream_format.cpp	2009-08-10 21:49:07.000000000 +0200
+@@ -22,6 +22,7 @@
+ #include "serialize.h"
+ #include "ieee1394service.h"
+ 
++#include <cstdio>
+ #include <netinet/in.h>
+ 
+ ///////////////////////////////////////////////////////////
+diff -Nur libfreebob-1.0.11-orig/src/libfreebobavc/avc_generic.cpp libfreebob-1.0.11/src/libfreebobavc/avc_generic.cpp
+--- libfreebob-1.0.11-orig/src/libfreebobavc/avc_generic.cpp	2009-08-10 20:31:14.000000000 +0200
++++ libfreebob-1.0.11/src/libfreebobavc/avc_generic.cpp	2009-08-10 21:49:07.000000000 +0200
+@@ -22,6 +22,7 @@
+ #include "serialize.h"
+ #include "ieee1394service.h"
+ 
++#include <cstdio>
+ #include <cstdlib>
+ #include <cstring>
+ #include <netinet/in.h>
+diff -Nur libfreebob-1.0.11-orig/src/libfreebobavc/ieee1394service.cpp libfreebob-1.0.11/src/libfreebobavc/ieee1394service.cpp
+--- libfreebob-1.0.11-orig/src/libfreebobavc/ieee1394service.cpp	2007-10-15 20:15:08.000000000 +0200
++++ libfreebob-1.0.11/src/libfreebobavc/ieee1394service.cpp	2009-08-10 21:49:07.000000000 +0200
+@@ -24,6 +24,7 @@
+ #include <errno.h>
+ #include <netinet/in.h>
+ 
++#include <cstdio>
+ #include <iostream>
+ 
+ using namespace std;
+diff -Nur libfreebob-1.0.11-orig/src/libfreebobavc/serialize.cpp libfreebob-1.0.11/src/libfreebobavc/serialize.cpp
+--- libfreebob-1.0.11-orig/src/libfreebobavc/serialize.cpp	2007-10-15 20:15:08.000000000 +0200
++++ libfreebob-1.0.11/src/libfreebobavc/serialize.cpp	2009-08-10 21:49:07.000000000 +0200
+@@ -20,6 +20,7 @@
+ 
+ #include "serialize.h"
+ 
++#include <cstdio>
+ #include <iostream>
+ #include <iomanip>
+ 
+diff -Nur libfreebob-1.0.11-orig/tests/test-volume.cpp libfreebob-1.0.11/tests/test-volume.cpp
+--- libfreebob-1.0.11-orig/tests/test-volume.cpp	2009-08-10 20:31:14.000000000 +0200
++++ libfreebob-1.0.11/tests/test-volume.cpp	2009-08-10 21:49:30.000000000 +0200
+@@ -22,6 +22,7 @@
+ #include "libfreebobavc/serialize.h"
+ #include "libfreebobavc/ieee1394service.h"
+ 
++#include <cstdio>
+ #include <cstdlib>
+ 
+ const bool bVerbose = false;
