@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	http://dl.sourceforge.net/freebob/%{name}-%{version}.tar.gz
 # Source0-md5:	e49eed0084b9e793e7a0713aa99c196c
 Patch0:		%{name}-gcc43.patch
+Patch1:		%{name}-gcc46.patch
 URL:		http://freebob.sourceforge.net/
 BuildRequires:	alsa-lib-devel >= 1.0.0
 BuildRequires:	libavc1394-devel >= 0.5.3
@@ -59,6 +60,7 @@ Statyczna biblioteka FreeBoB.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure
@@ -69,6 +71,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libfreebob.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -85,7 +89,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libfreebob.so
-%{_libdir}/libfreebob.la
 %{_includedir}/libfreebob
 %{_pkgconfigdir}/libfreebob.pc
 
