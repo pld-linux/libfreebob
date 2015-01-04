@@ -9,6 +9,7 @@ Source0:	http://dl.sourceforge.net/freebob/%{name}-%{version}.tar.gz
 # Source0-md5:	e49eed0084b9e793e7a0713aa99c196c
 Patch0:		%{name}-gcc43.patch
 Patch1:		%{name}-gcc46.patch
+Patch2:		%{name}-gcc49.patch
 URL:		http://freebob.sourceforge.net/
 BuildRequires:	alsa-lib-devel >= 1.0.0
 BuildRequires:	libavc1394-devel >= 0.5.3
@@ -61,6 +62,7 @@ Statyczna biblioteka FreeBoB.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 %configure

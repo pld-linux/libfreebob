@@ -1,0 +1,10 @@
+--- libfreebob-1.0.11/src/libfreebobavc/avc_generic.cpp~	2015-01-04 10:29:38.000000000 +0000
++++ libfreebob-1.0.11/src/libfreebobavc/avc_generic.cpp	2015-01-04 10:31:18.679984754 +0000
+@@ -26,6 +26,7 @@
+ #include <cstdlib>
+ #include <cstring>
+ #include <netinet/in.h>
++#include <unistd.h>
+ 
+ #define DEBUG_EXTRA_VERBOSE 2
+ 
